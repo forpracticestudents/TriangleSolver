@@ -38,5 +38,10 @@ int main()
 	double angleB = GetAngle(bSide, aSide, cSide);
 	double angleC = GetAngle(cSide, aSide, bSide);
 	std::cout << angleA << " " << angleB << " " << angleC << std::endl;
+	std::cout << "Perimeter is " << GetPerimeter(aSide, bSide, cSide) << std::endl;
+	std::cout << "Area is " << GetArea(aSide, bSide, cSide) << std::endl;
+	std::cout << "Altitude A is " << GetAltitude(aSide, bSide, cSide) << std::endl;
+	std::cout << "Altitude B is " << GetAltitude(bSide, aSide, cSide) << std::endl;
+	std::cout << "Altitude C is " << GetAltitude(cSide, aSide, bSide) << std::endl;
 	return 0;
 }
