@@ -3,6 +3,22 @@
 
 #define PI 3.14159265
 
+double GetPerimeter(double aSide, double bSide, double cSide)
+{
+	return aSide + bSide + cSide;
+}
+
+double GetArea(double aSide, double bSide, double cSide)
+{
+	double p = GetPerimeter(aSide, bSide, cSide)/2;
+	return sqrt(p*(p-aSide)*(p-bSide)*(p-cSide));
+}
+
+double GetAltitude(double aSide, double bSide, double cSide)
+{
+	return 2*GetArea(aSide, bSide, cSide)/aSide;
+}
+
 double GetAngle(double aSide, double bSide, double cSide)
 {
   double angle = acos((bSide*bSide + cSide*cSide - aSide*aSide)/(2*bSide*cSide));
