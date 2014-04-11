@@ -27,6 +27,7 @@ double GetAngle(double aSide, double bSide, double cSide)
 
 int main()
 {
+	// The sides of triangle.
 	double aSide, bSide, cSide;
 	std::cout << "Enter a side ";
 	std::cin >> aSide;
